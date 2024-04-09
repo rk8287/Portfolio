@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import Parallex from './components/Parallex/Parallex';
 import Service from './components/Services/Service';
 import Portfolio from './components/portfolio/Portfolio';
+import Contact from './components/contact/Contact';
+
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
       </section>
       <section id='Portfolio'><Parallex type={"portfolio"} /></section>
       <Portfolio/>
-      <section>Contact</section>
+      <section>
+        <Contact/>
+      </section>
     </div>
   );
 }
