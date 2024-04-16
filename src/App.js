@@ -6,6 +6,8 @@ import Parallex from './components/Parallex/Parallex';
 import Service from './components/Services/Service';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
+import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 
 
 function App() {
@@ -15,6 +17,11 @@ function App() {
         <Navbar />
         <Home />
       </section>
+
+
+      <section id='about'>
+        <About/>
+        </section>
       
       <section id='services'>
         <Parallex type={"services"} />
@@ -23,6 +30,9 @@ function App() {
       <section>
         <Service/>
       </section>
+
+      
+
       <section id='Portfolio'><Parallex type={"portfolio"} /></section>
       <Portfolio/>
       <section>

@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.scss'
 import {motion} from 'framer-motion'
 import Sidebar from '../Header/Sidebar'
+import { GiDrippingStar } from "react-icons/gi";
 
 const facebook = require('../../assets/images/facebook.png')
 const instagram = require('../../assets/images/instagram.png')
@@ -18,7 +19,7 @@ const Navbar = () => {
             animate={{opacity:1, scale: 1}}
             transition={{duration:0.5}}
 
-            >Raunak Portfolio</motion.span>
+            ><GiDrippingStar className='start-icon'/> Portfolio</motion.span>
 
             <div className="social">
                 <a href=""><img src={facebook} alt="" /></a>

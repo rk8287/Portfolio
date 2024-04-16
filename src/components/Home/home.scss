@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero{
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -17,21 +19,37 @@
             justify-content: center;
             gap: 40px;
 
+
+            @include mobile {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+              }
+
             h2{
                 font-size: 50px;
                 letter-spacing: 5px;
                 color: rebeccapurple;
+
+               
+
             }
 
             h1{
                 font-size: 88px;
                 color: white;
+
+                @include mobile {
+                    font-size: 26px;
+                  }
             }
 
             .buttons{
                
                 button{
-                    padding: 20px;
+                    padding: 20px 30px;
                     border: 1px solid white;
                     border-radius: 10px;
                     background-color: transparent;
@@ -53,6 +71,13 @@
         position: absolute;
         top: 0;
         right: 0;
+
+        @include mobile {
+            height: 50%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+          }
     }
 
     .slidingTextContainer{
@@ -63,5 +88,65 @@
         color: #ffffff09;
         width: 50%;
         font-weight: bold;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero{
+
+
+        .wrapper{
+
+            .textContainer{
+
+
+                h2{
+                    margin-top: 15rem;
+                }
+
+                h1{
+
+                    font-size: 1rem;
+                    
+                }
+
+            .buttons{
+
+                button{
+
+                    padding: 10px 20px;
+                    width: 100%;
+                    font-weight: 500;
+                    margin: 1rem 0;
+                }
+            }
+            }
+        }
+
+        .slidingTextContainer{
+
+            position: absolute;
+            font-size: 40vh;
+            bottom: -60px;
+            white-space: nowrap;
+            color: #ffffff09;
+            width: 100%;
+            font-weight: bold;
+
+            .image-container{
+               width: 100%;
+               height: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               img{
+                width: 650px;
+                height: 650px;
+               }
+            }
+        }
     }
 }

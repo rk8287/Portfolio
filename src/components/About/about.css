@@ -1,0 +1,240 @@
+.main-about {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+}
+
+.about-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 5rem 0;
+}
+
+.left {
+    width: 50%; 
+    margin: 0 3rem 2rem 7rem;
+}
+
+.about-image {
+    width: 100%;
+    height: 75%;
+    border-radius: 22px;
+}
+
+.aboutImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 22px;
+   
+    
+}
+
+.right {
+    width: 80%; 
+    margin-right: 8rem;
+}
+
+.wrapper {
+    display: flex;
+    margin: 2rem 0;
+}
+
+
+.first {
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    padding: 1.3rem 3rem;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.experience {
+    padding: 0.3rem;
+}
+
+.more-detials {
+    width: 100%;
+    line-height: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    margin: 3rem 0;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.techhh {
+    animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.tech {
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+
+   
+
+  
+    
+    .header h1 {
+        font-size: 2rem;
+        
+    }
+    
+    .about-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+    
+    .left {
+        width: 50%;
+        
+    }
+    
+    .about-image {
+        width: 100%;
+        height: 100%;
+       
+    }
+    
+    .aboutImg {
+        width: 80%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 22px;
+    }
+    
+    .right {
+        width: 100%;
+        padding: 0 1rem; 
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .wrapper {
+
+        display: flex;
+        margin: 2rem 0;
+        display: flex;
+       
+    }
+    
+    
+    .first {
+        border: 1px solid white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+        margin-right:0.4rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .icon {
+        font-size: 1rem;
+    }
+
+    .otherexpre{
+        font-size: 0.6rem;
+    }
+
+    .role h3{
+        font-size: 0.7rem;
+        text-align: center;
+       
+    }
+    
+    .experience {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+    }
+    
+    .more-detials {
+        width: 100%;
+        line-height: 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+       
+    }
+    
+    .technologies {
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin: 1.7rem 0;
+
+    }
+    
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    .techhh {
+        animation: slideInFromLeft 0.5s ease forwards;
+    }
+    
+    .tech {
+        width: 30px;
+        height: 30px;
+        margin: 0 0.4rem;
+        object-fit: contain;
+    }
+}
+

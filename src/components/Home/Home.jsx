@@ -2,8 +2,12 @@ import React from 'react';
 import './home.scss';
 import { motion } from 'framer-motion';
 import {TypeAnimation} from 'react-type-animation'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'; 
 
-const img = require('../../assets/images/hero.png');
+const iconimg = require('../../assets/images/mainIconsdark.png')
+
+
 const img1 = require('../../assets/images/scroll.png');
 
 
@@ -65,7 +69,7 @@ const Home = () => {
            
           ]} speed={50} repeat={Infinity}/></motion.h1>
           <motion.div variants={textVariants} className='buttons'>
-            <motion.button variants={textVariants}>See the Latest Works</motion.button>
+      
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img variants={textVariants}  animate={"scrollButton"} src={img1} alt='' />
@@ -73,7 +77,8 @@ const Home = () => {
       </div>
       <motion.div className='slidingTextContainer' variants={sliderVariants} initial={"initial"} animate='animate' >writer Context Creator Influencer</motion.div>
       <div className='image-container'>
-        {/* <img  src={img} alt='' /> */}
+       <img  src={iconimg}
+          alt="work icons"/>
       </div>
     </div>
   );
